@@ -1,0 +1,1962 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* -------------------------------- Header Starts Here -------------------------------- */
+
+/* ------------------------------ Top Header Starts Here ---------------------------------*/
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(41, 41, 41);
+  padding: 15px;
+  border-bottom: 1px solid rgb(78, 78, 78);
+  overflow-x: hidden;
+}
+
+.top .left {
+  margin-left: 60px;
+}
+
+.top a {
+  color: rgb(175, 173, 173);
+  margin-right: 50px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.top #currency {
+  margin-right: 2px;
+}
+
+.top .right {
+  margin-right: 60px;
+}
+
+.cart {
+  background-color: rgb(41, 41, 41);
+  border: none;
+  color: rgb(175, 173, 173);
+  cursor: pointer;
+}
+
+/* ----------------------------------- Top Header Ends Here ----------------------------------- */
+
+/* ----------------------------------Bottom Header Starts Here ---------------------------------*/
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(41, 41, 41);
+  padding: 25px;
+  overflow-x: hidden;
+}
+
+.bottom .right {
+  display: flex;
+  align-items: center;
+}
+
+.bottom a {
+  color: white;
+  margin-right: 50px;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.bottom .left:first-child i {
+  font-size: 2rem;
+  margin-left: 50px;
+}
+
+.bottom .right:last-child i {
+  font-size: 1.5rem;
+}
+
+#logo {
+  height: 40px;
+  width: 150px;
+  margin-right: 100px;
+}
+
+#watch:hover,
+#audio:hover,
+#eyewear:hover,
+#bags:hover,
+#perfumes:hover,
+#offers:hover,
+.search-icon:hover,
+.cancel-icon:hover {
+  color: orangered;
+}
+
+.cls-1 {
+  fill: white;
+  cursor: pointer;
+}
+
+/* ----------------------------------Bottom Header Ends Here ---------------------------------*/
+
+/* ------------------------Section on click Search Starts Here -------------------------------------- */
+
+.search-click {
+  display: none;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.search-click input {
+  border: none;
+  outline: none;
+  background-color: rgb(41, 41, 41);
+  color: rgb(214, 146, 97);
+  border-bottom: 1px solid grey;
+  padding: 10px;
+  width: 700px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.search-click .fa-microphone,
+.search-click .fa-magnifying-glass {
+  font-size: 1.5rem;
+  color: rgb(214, 146, 97);
+  margin-right: 15px;
+}
+
+.search-click .fa-microphone {
+  border-right: 1px solid rgb(214, 146, 97);
+  padding: 8px 15px 8px 0;
+}
+
+.cancel-icon {
+  display: none;
+}
+
+/* --------------------------Section on click Search Ends Here -------------------------------------- */
+
+/* ----------------------- Section on hovering "Watches Starts Here" ----------------------------- */
+
+#watch_hover {
+  display: flex;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  padding: 20px 50px 20px 60px;
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+.watch_style {
+  display: flex;
+  justify-content: space-between;
+}
+
+.watch_style h2 {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.watch_style img {
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+#watch_hover a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.watch_images {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.watch_shopCollectibles {
+  margin-right: 60px;
+}
+
+#fig_caption {
+  display: flex;
+  align-items: center;
+}
+
+#watch_img {
+  height: 420px;
+}
+
+.watch_buy {
+  width: 75%;
+}
+
+#watch_btn {
+  width: 90%;
+  padding: 10px;
+  color: white;
+  background-color: rgb(75, 73, 73);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ----------------------- Section on hovering "Watches" Ends Here ----------------------------- */
+
+/* ------------------- Section on hovering "Smart and Audio" Starts Here ------------------------- */
+
+#audio_hover {
+  display: flex;
+  background-color: rgb(41, 41, 41);
+  padding: 20px 50px 20px 60px;
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+.watch_neckbands {
+  display: flex;
+  width: 50%;
+}
+
+.watches_bands,
+.watches_wireless {
+  margin-right: 20px;
+  width: 50%;
+}
+
+.watches_bands button,
+.watches_wireless button {
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(75, 73, 73);
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.watch_neckbands a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.watch_neckbands a h2 {
+  font-size: 15px;
+}
+
+#audio_hover figure {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#audio_hover figure a {
+  margin-right: 20px;
+}
+
+#audio_hover figure a img {
+  width: 100%;
+  height: 92%;
+}
+
+/* ------------------- Section on hovering "Smart and Audio" Ends Here ------------------------- */
+
+/* ---------------------- Section on hovering "Bags & MORE" Starts Here ---------------------------- */
+
+#bags_hover {
+  display: flex;
+  background-color: rgb(41, 41, 41);
+  display: none;
+  padding: 20px 50px 20px 60px;
+  position: absolute;
+  width: 100%;
+}
+
+.bags_content {
+  display: flex;
+}
+
+.bags_style {
+  display: flex;
+  width: 50%;
+  color: white;
+}
+
+#bags_hover a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+#bag_heading {
+  font-size: 15px;
+}
+
+.bags_guys h2,
+.bags_guys a,
+.bags_girls h2,
+.bags_girls a,
+.bags_category h2,
+.bags_category a {
+  margin: 0 45px 20px 0;
+}
+
+#bags_img {
+  width: 50%;
+}
+
+#bags_img img {
+  height: 300px;
+  width: 100%;
+}
+
+/* ---------------------- Section on hovering "Bags & MORE" Ends Here ---------------------------- */
+
+/* ----------------------- Section on hovering "Perfumes" Starts Here -------------------------- */
+
+#perfumes_hover {
+  display: flex;
+  background-color: rgb(41, 41, 41);
+  padding: 20px 50px 20px 60px;
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+#perfumes_hover .perfumes_view {
+  width: 30%;
+}
+
+.perfumes_both {
+  display: flex;
+}
+
+.perfumes_both a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.perfumes_both a h2 {
+  font-size: 15px;
+}
+
+.perfumes_guys,
+.perfumes_girls {
+  width: 50%;
+}
+
+.perfumes_view {
+  margin-right: 20px;
+}
+
+.perfumes_view button {
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(75, 73, 73);
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#perfumes_hover figure {
+  width: 70%;
+}
+
+#perfumes_img img {
+  height: 255px;
+}
+
+#perfumes_hover figure figcaption {
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 10px;
+}
+
+#perfumes_hover figure a {
+  text-decoration: none;
+}
+
+/* ----------------------- Section on hovering "Perfumes" Ends Here -------------------------- */
+
+/* ------------------- Section on hovering "Offers And More" Starts Here --------------------- */
+
+#offers_hover {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(41, 41, 41);
+  padding: 20px 50px 20px 60px;
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+#offers_hover a img {
+  height: 200px;
+  width: 100%;
+}
+
+/* -------------------- Section on hovering "Offers And More" Ends Here ---------------------- */
+
+/* ---------------------------------------- Header Ends Here --------------------------------- */
+
+/* ----------------------- Section on click "CURRENCY SELECTOR" starts here ---------------- */
+
+#currency_click {
+  background-color: rgb(41, 41, 41);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 50px;
+  display: none;
+}
+
+#currency_click h3 {
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: lighter;
+}
+
+#currency_click button {
+  padding: 15px 80px;
+  border: 1px solid rgb(148, 146, 146);
+  background-color: rgb(26, 25, 25);
+  color: rgb(110, 110, 110);
+  font-weight: 800;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+/* -------------------------- Section on click "CURRENCY SELECTOR" ends here --------------- */
+
+/* ---------------------------------- Section on click "LOGIN" starts here ------------------------- */
+
+#login_click {
+  margin: 20px 80px;
+  display: none;
+}
+
+#login_click figure {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#login_click img {
+  height: 15%;
+  width: 25%;
+}
+
+.login_signup {
+  display: flex;
+}
+
+.login_signup .login {
+  width: 50%;
+}
+
+.login_signup .login .log {
+  width: 80%;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.login_signup .login .log a {
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.login_signup .login .log .plus {
+  font-size: 20px;
+  margin: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ------------------------ Section on click "LOGIN VIA OTP" starts here -------------------- */
+
+.otp_login .otp_login_inside {
+  border: 1px solid black;
+  display: none;
+}
+
+legend {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.mob_email {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  font-size: 15px;
+}
+
+.otp_login .otp_login_inside h2 {
+  text-align: center;
+  font-size: 16px;
+  margin: 30px 0;
+}
+
+.country {
+  width: 20%;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  background-color: rgb(236, 235, 235);
+  padding: 10px;
+  margin: 0 20px;
+}
+
+.phone {
+  width: 65%;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  background-color: rgb(236, 235, 235);
+  padding: 10px;
+  letter-spacing: 2px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.otp_login .otp_login_inside button {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  padding: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+/* ------------------------ Section on click "LOGIN VIA OTP" ends here -------------------- */
+
+/* ------------------------ Section on click "LOGIN VIA PASSWORD" starts here -------------------- */
+
+.password_login .password_login_inside {
+  width: 100%;
+  display: none;
+}
+
+.password_login .password_login_inside .mobile_input {
+  width: 90%;
+  text-align: center;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: rgb(236, 235, 235);
+  margin: 20px;
+}
+
+.password_login .password_login_inside .password_div {
+  width: 90%;
+  background-color: rgb(236, 235, 235);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 20px 20px;
+}
+
+.password_login .password_login_inside .password_input {
+  background-color: rgb(236, 235, 235);
+  margin-left: 150px;
+  outline: none;
+  border: none;
+}
+
+.password_login .password_login_inside .password_div .eye {
+  display: none;
+}
+
+.password_login .password_login_inside .remember {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 40px 20px;
+}
+
+.password_login .password_login_inside .remember .check a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.password_login .password_login_inside .remember .forgot a {
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.password_login .password_login_inside button {
+  width: 100%;
+  color: white;
+  background-color: black;
+  padding: 15px;
+  cursor: pointer;
+}
+
+/* ------------------------ Section on click "LOGIN VIA PASSWORD" ends here -------------------- */
+
+/* -------------------- Section on click "LOGIN VIA FACEBOOK/GOOGLE" starts here -------------------- */
+
+.fb_login .heading {
+  width: 100%;
+  display: none;
+}
+
+.fb_login .heading h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.fb_login .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fb_login .buttons .facebook,
+.fb_login .buttons .google {
+  outline: none;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 18px;
+  width: 45%;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* -------------------- Section on click "LOGIN VIA FACEBOOK/GOOGLE" ends here -------------------- */
+
+.signup {
+  width: 50%;
+  padding-left: 160px;
+  border-left: 2px solid black;
+}
+
+.signup p {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.signup ul h1 {
+  margin-bottom: 10px;
+}
+
+.signup li {
+  font-size: 15px;
+  margin-left: 40px;
+}
+
+.signup .signup_btn {
+  width: 100%;
+  padding: 20px;
+  margin-top: 50px;
+  background-color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signup .signup_btn:hover {
+  color: white;
+  background-color: black;
+}
+
+/* ---------------------------------- Section on click "LOGIN" ends here ------------------------- */
+
+/* ---------------------------- Section on click "SIGN UP NOW" starts here --------------------------- */
+
+#signup_click {
+  display: none;
+}
+
+#signup_click figure img {
+  height: 20%;
+  width: 20%;
+  display: flex;
+  margin: 20px auto;
+}
+
+#signup_click .signup_box {
+  width: 35%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+#signup_click .signup_box #title {
+  padding: 15px;
+  width: 28%;
+  margin: 0 20px 40px 20px;
+  border: none;
+  outline: none;
+  background-color: rgb(236, 235, 235);
+}
+
+#signup_click .signup_box #first_name {
+  padding: 15px;
+  width: 58.5%;
+  border: none;
+  outline: none;
+  background-color: rgb(236, 235, 235);
+  letter-spacing: 2px;
+  margin-right: 20px;
+}
+
+#signup_click .signup_box #last_name {
+  width: 92%;
+  border: none;
+  outline: none;
+  background-color: rgb(236, 235, 235);
+  padding: 15px;
+  margin: 0 20px 40px 20px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+#signup_click .signup_box #country {
+  width: 25%;
+  border: none;
+  outline: none;
+  background-color: rgb(236, 235, 235);
+  padding: 15px;
+  margin: 0 40px 40px 20px;
+}
+
+#signup_click .signup_box #mobile_no {
+  width: 57.2%;
+  border: none;
+  outline: none;
+  background-color: rgb(236, 235, 235);
+  padding: 15px;
+  letter-spacing: 2px;
+  margin-right: 20px;
+}
+
+#signup_click .signup_box #email {
+  width: 92%;
+  border: none;
+  outline: none;
+  background-color: rgb(236, 235, 235);
+  padding: 15px;
+  margin: 0 20px 40px 20px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+#signup_click .signup_box #password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 92%;
+  background-color: rgb(236, 235, 235);
+  padding: 15px;
+  margin: 0 20px 40px 20px;
+}
+
+#signup_click .signup_box #password input {
+  border: none;
+  outline: none;
+  background-color: rgb(236, 235, 235);
+  letter-spacing: 2px;
+  margin-left: 40%;
+}
+
+#signup_click .signup_box #receive,
+#signup_click .signup_box #t_c {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  margin-left: 20px;
+}
+
+#signup_click .signup_box #receive #checkbox,
+#signup_click .signup_box #t_c #checkbox {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+}
+
+#signup_click .signup_box #receive h2,
+#signup_click .signup_box #t_c h2 {
+  font-weight: 400;
+}
+
+#signup_click .signup_box #register {
+  width: 100%;
+  cursor: pointer;
+  padding: 15px 10px;
+  border: 1px solid black;
+  font-weight: 700;
+  margin-top: 25px;
+  background-color: white;
+}
+
+#signup_click .signup_box #register:hover {
+  color: white;
+  background-color: black;
+}
+
+/* ---------------------------- Section on click "SIGN UP NOW" ends here --------------------------- */
+
+/* --------------------------- Section on click "Request OTP" Starts Here ----------------------------- */
+
+.otp-container {
+  display: none;
+  position: relative;
+  top: -100px;
+  /* text-align: center; */
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.logo {
+  width: 300px;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.verify-mobile-otp-heading {
+  margin: 0 10px;
+  font-size: 2.5rem;
+}
+
+.otp-para {
+  margin-top: 25px;
+  margin-bottom: 35px;
+  font-size: 1.5rem;
+}
+
+.otp-div .input-label {
+  font-size: 2rem;
+}
+
+.otp-input {
+  width: 350px;
+  padding: 15px 0;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.verify-OTP-Btn {
+  width: 400px;
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.otp-resend {
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+
+/* --------------------------- Section on click "Request OTP" Ends Here ----------------------------- */
+
+/* ---------------------------- Section on click "SIGN UP NOW" starts here --------------------------- */
+
+#signup_click {
+  display: none;
+}
+
+#signup_click figure img {
+  height: 20%;
+  width: 20%;
+  display: flex;
+  margin: 20px auto;
+}
+
+#signup_click .signup_box {
+  width: 35%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+#signup_click .signup_box #title {
+  padding: 15px;
+  width: 28%;
+  margin: 0 20px 40px 20px;
+  border: none;
+  outline: none;
+  background-color: rgb(236, 235, 235);
+}
+
+#signup_click .signup_box #first_name {
+  padding: 15px;
+  width: 58.5%;
+  border: none;
+  outline: none;
+  background-color: rgb(236, 235, 235);
+  letter-spacing: 2px;
+  margin-right: 20px;
+}
+
+#signup_click .signup_box #last_name {
+  width: 92%;
+  border: none;
+  outline: none;
+  background-color: rgb(236, 235, 235);
+  padding: 15px;
+  margin: 0 20px 40px 20px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+#signup_click .signup_box #country {
+  width: 25%;
+  border: none;
+  outline: none;
+  background-color: rgb(236, 235, 235);
+  padding: 15px;
+  margin: 0 40px 40px 20px;
+}
+
+#signup_click .signup_box #mobile_no {
+  width: 57.2%;
+  border: none;
+  outline: none;
+  background-color: rgb(236, 235, 235);
+  padding: 15px;
+  letter-spacing: 2px;
+  margin-right: 20px;
+}
+
+#signup_click .signup_box #email {
+  width: 92%;
+  border: none;
+  outline: none;
+  background-color: rgb(236, 235, 235);
+  padding: 15px;
+  margin: 0 20px 40px 20px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+#signup_click .signup_box #password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 92%;
+  background-color: rgb(236, 235, 235);
+  padding: 15px;
+  margin: 0 20px 40px 20px;
+}
+
+#signup_click .signup_box #password input {
+  border: none;
+  outline: none;
+  background-color: rgb(236, 235, 235);
+  letter-spacing: 2px;
+  margin-left: 40%;
+}
+
+#signup_click .signup_box #receive,
+#signup_click .signup_box #t_c {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  margin-left: 20px;
+}
+
+#signup_click .signup_box #receive #checkbox,
+#signup_click .signup_box #t_c #checkbox {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+}
+
+#signup_click .signup_box #receive h2,
+#signup_click .signup_box #t_c h2 {
+  font-weight: 400;
+}
+
+#signup_click .signup_box #register {
+  width: 100%;
+  cursor: pointer;
+  padding: 15px 10px;
+  border: 1px solid black;
+  font-weight: 700;
+  margin-top: 25px;
+  background-color: white;
+}
+
+#signup_click .signup_box #register:hover {
+  color: white;
+  background-color: black;
+}
+
+/* ---------------------------- Section on click "SIGN UP NOW" ends here --------------------------- */
+
+/* --------------------------- Section on click "Request OTP" Starts Here ----------------------------- */
+
+.otp-container {
+  display: none;
+  position: relative;
+  top: -100px;
+}
+
+logo {
+  width: 300px;
+  /* margin-bottom: 50px; */
+}
+
+.verify-mobile-otp-heading {
+  margin: 0 10px;
+  font-size: 2.5rem;
+}
+
+.otp-container {
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.otp-para {
+  margin-top: 25px;
+  margin-bottom: 35px;
+  font-size: 1.5rem;
+}
+
+.otp-div .input-label {
+  font-size: 2rem;
+}
+
+.otp-input {
+  width: 350px;
+  padding: 15px 0;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.verify-OTP-Btn {
+  width: 400px;
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.otp-resend {
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+
+/* --------------------------- Section on click "Request OTP" Ends Here ----------------------------- */
+
+/* -------------------------- Slider(just after header) Starts Here ----------------------------- */
+
+.slider {
+  width: 98.75vw;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  height: 420px;
+  width: 800%;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 1s;
+}
+
+.slide img {
+  height: 400px;
+  width: 100vw;
+  cursor: pointer;
+}
+
+/* Manual navigation */
+
+.navigation-manual {
+  position: absolute;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  margin-top: 350px;
+  margin-left: 280px;
+}
+
+.manual-btn {
+  border: 2px solid white;
+  background: white;
+  padding: 3px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -16.65%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+#radio5:checked ~ .first {
+  margin-left: -80%;
+}
+
+#radio6:checked ~ .first {
+  margin-left: -100%;
+}
+
+#radio7:checked ~ .first {
+  margin-left: -120%;
+}
+
+/* Automatic navigation */
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 350px;
+  margin-left: 280px;
+}
+
+.navigation-auto div {
+  border: 2px solid white;
+  background: white;
+  padding: 3px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* -------------------------- Slider(just after header) Ends Here ----------------------------- */
+
+/* --------------------------- Fastrack Essentials Starts Here -------------------------------- */
+
+.trending_product {
+  width: 79.5%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.watch_img {
+  margin-right: 28px;
+  margin-bottom: 20px;
+}
+
+.watch_img h5 {
+  text-align: center;
+  font-size: 1.3rem;
+  color: rgb(41, 41, 41);
+}
+
+.trending_watch_heading h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 60px 0;
+  color: rgb(41, 41, 41);
+}
+
+.trending_product .trending_watch_image {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.trending_product .trending_watch_image::-webkit-scrollbar {
+  display: none;
+}
+
+.watch {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 25px;
+}
+
+.trending-prev-btn,
+.trending-next-btn,
+.prev-btn,
+.next-btn {
+  position: relative;
+  border: none;
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.trending-prev-btn {
+  font-size: 25px;
+  left: 100px;
+  top: -160px;
+}
+
+.trending-next-btn {
+  font-size: 25px;
+  right: -1170px;
+  top: -160px;
+}
+
+.prev-btn,
+.next-btn {
+  margin-right: 20px;
+  left: 600px;
+}
+
+/* --------------------------- Fastrack Essentials Ends Here -------------------------------- */
+
+/* --------------------------------- Video Starts Here ------------------------------------- */
+
+#video {
+  width: 98.75vw;
+  cursor: pointer;
+  margin: 75px 0;
+}
+
+/* ---------------------------------- Video Ends Here ------------------------------------- */
+
+/* -------------------------------- Trending Starts Here ---------------------------------- */
+
+.trending h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(41, 41, 41);
+  margin-bottom: 200px;
+}
+
+.trending-images {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(41, 41, 41);
+  height: 300px;
+}
+
+.trending-img {
+  position: relative;
+  height: 380px;
+  width: 380px;
+  top: -160px;
+}
+
+.trending-img1 {
+  margin-left: 80px;
+}
+
+.trending-img3 {
+  margin-right: 80px;
+}
+
+/* -------------------------------- Trending Ends Here ---------------------------------- */
+
+/* ----------------------------- Trending Products Starts Here -------------------------- */
+
+.trending-products {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.trending-products h1 {
+  text-align: center;
+  color: rgb(41, 41, 41);
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.trending-products-images {
+  display: flex;
+  width: 86.6%;
+  margin: 0 auto;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.trending-products-images::-webkit-scrollbar {
+  display: none;
+}
+
+.trending-products-image img {
+  height: 260px;
+  width: 260px;
+  /* margin-right: 30px; */
+  margin: 0 15px;
+}
+
+.trending-products-image:hover {
+  border: 0.5px solid grey;
+}
+
+.trending-products-image figcaption {
+  font-size: 15px;
+  margin-left: 15px;
+  font-weight: 700;
+  margin-top: 15px;
+  text-transform: uppercase;
+  width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#trendingLastImg {
+  margin-right: 0;
+}
+
+.trendingProductButton1,
+.trendingProductButton2 {
+  position: relative;
+  border: none;
+  outline: none;
+  background-color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.trendingProductButton1 {
+  top: -180px;
+  left: 50px;
+}
+
+.trendingProductButton2 {
+  top: -180px;
+  left: 1250px;
+}
+
+.trending-products-image .prices {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.trending-products-image .prices .old-price {
+  margin-left: 5px;
+  text-decoration: line-through;
+}
+
+/* ------------------------------ Trending Products Ends Here -------------------------- */
+
+.after-trending {
+  width: 46%;
+  background-color: rgb(41, 41, 41);
+  margin: 0 80px 20px 40px;
+  height: 1050px;
+}
+
+.after-trending .first,
+.after-trending .second {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.after-trending .after-trending-img {
+  position: relative;
+  height: 420px;
+  width: 700px;
+}
+
+.after-trending .img1 {
+  top: -150px;
+  left: 550px;
+}
+
+.after-trending .first-heading {
+  position: relative;
+  top: 180px;
+  left: 70px;
+  width: 410px;
+  text-align: center;
+  color: white;
+  font-size: 2.8rem;
+}
+
+.after-trending .first-heading a {
+  color: white;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.after-trending .img2 {
+  top: -200px;
+  left: 100px;
+}
+
+.after-trending .second-heading {
+  position: relative;
+  top: 100px;
+  left: 770px;
+  width: 460px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgb(41, 41, 41);
+}
+
+.after-trending .second-heading a {
+  color: black;
+  font-size: 15px;
+  display: block;
+  color: rgb(41, 41, 41);
+  margin-top: 15px;
+}
+
+/* ------------------------------------- Featured Collection Starts Here --------------------------------- */
+
+.featured-collection h1 {
+  text-align: center;
+  color: rgb(41, 41, 41);
+  font-size: 3rem;
+  margin-bottom: 280px;
+}
+
+.featured-collection .featured-images {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(41, 41, 41);
+  height: 350px;
+}
+
+.featured-collection .featured-images img {
+  position: relative;
+  height: 380px;
+  width: 400px;
+  top: -220px;
+}
+
+.featured-collection .featured-images .featured-img1 {
+  margin-left: 50px;
+}
+
+.featured-collection .featured-images .featured-img3 {
+  margin-right: 50px;
+}
+
+.featured-collection .featured-images figcaption {
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+  top: -200px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: goldenrod;
+  cursor: pointer;
+}
+
+.featured-collection .featured-images figure p {
+  position: relative;
+  top: -190px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 320px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* --------------------------------------- Featured Collection Ends Here --------------------------------- */
+
+/* ------------------------------------------- Follow Us Starts Here ------------------------------------- */
+
+.follow-us h1 {
+  text-align: center;
+  color: rgb(41, 41, 41);
+  margin: 40px 0;
+  font-size: 3rem;
+}
+
+.follow-us-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  height: 290px;
+  width: 290px;
+  margin: 0 20px 20px 20px;
+}
+
+.follow-us-btn {
+  display: flex;
+  color: rgb(41, 41, 41);
+  border: 1px solid rgb(41, 41, 41);
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: white;
+  outline: none;
+  margin: 10px auto;
+}
+
+/* -------------------------------------------- Follow Us Ends Here ------------------------------------- */
+
+/* -------------------------------------------- Reviews Starts Here ------------------------------------ */
+
+/* .reviews {
+  margin: 80px 25px;
+}
+
+.reviews-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(41, 41, 41);
+}
+
+.reviews-left {
+  font-size: 1.2rem;
+}
+
+.reviews-right {
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.reviews-right p {
+  margin: 0 15px 0 10px;
+}
+
+.reviews-left-btn, .reviews-right-btn {
+  border: none;
+  background-color: white;
+  font-size: 2rem;
+  margin-right: 10px;
+  color: rgb(41, 41, 41);
+}
+
+.fa-star {
+  background-color: crimson;
+} */
+
+/* --------------------------------------------- Reviews Ends Here ------------------------------------ */
+
+/* ----------------------------------------- Find a Store Starts Here -------------------------------- */
+
+.store {
+  margin-top: 80px;
+}
+
+.store-location {
+  background-color: rgb(231, 231, 231);
+  padding-bottom: 50px;
+}
+
+.store-location h1 {
+  text-align: center;
+  color: rgb(41, 41, 41);
+  font-size: 3rem;
+  padding: 30px 0;
+}
+
+.store-search {
+  display: flex;
+  justify-content: center;
+}
+
+.store-search a {
+  margin-right: 20px;
+  font-size: 1.5rem;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  padding: 15px;
+  width: 400px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.store-search a .fa-location-dot {
+  margin-right: 20px;
+}
+
+.store-search input {
+  padding-left: 20px;
+  border: none;
+  outline: none;
+  width: 250px;
+}
+
+.store-search button {
+  width: 120px;
+  cursor: pointer;
+}
+
+.store-about {
+  background-color: rgb(41, 41, 41);
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.store-about h3 {
+  margin-top: 8px;
+  width: 250px;
+}
+
+.store-online {
+  margin: 20px 50px;
+  color: rgb(41, 41, 41);
+}
+
+.store-online p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.store-online a {
+  position: absolute;
+  right: 50px;
+  font-size: 1.2rem;
+  color: rgb(41, 41, 41);
+}
+
+/* ----------------------------------------- Find a Store Ends Here -------------------------------- */
+
+/* --------------------------------------- FOOTER starts here -------------------------------------- */
+
+.section4 {
+  background-color: rgb(41, 40, 40);
+  color: honeydew;
+  padding: 30px 50px;
+}
+
+.section4-upperDiv {
+  display: flex;
+  justify-content: space-around;
+  /* margin: 0 120px; */
+}
+
+.image {
+  width: 150px;
+  margin: 25px 10px 0 10px;
+  height: 45px;
+}
+
+.section4-heading {
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.section4-upperDiv ul li {
+  list-style: none;
+  font-size: 14px;
+}
+
+.section4-upperDiv ul li a {
+  text-decoration: none;
+  color: honeydew;
+  line-height: 3;
+}
+
+.section4-upperDiv ul li a:hover {
+  color: rgb(175, 80, 45);
+}
+
+.inner-deatil {
+  line-height: 3;
+  font-size: 14px;
+}
+
+.download-world-of-titan-app .flex1 {
+  display: flex;
+}
+
+.flex1-heading {
+  margin-right: 30px;
+}
+
+.icons i {
+  font-size: 20px;
+}
+
+.download-world-of-titan-app .flex1 li {
+  padding: 0 10px;
+}
+
+.click-here {
+  border-bottom: 1px solid honeydew;
+}
+
+.click-here:hover {
+  border-bottom: 1px solid rgb(145, 64, 34);
+}
+
+.whatsapp-icon {
+  font-size: 22px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+#myvideo {
+  width: 100%;
+  margin-left: 0;
+  position: relative;
+  top: -150px;
+}
+
+/* ------------------------------------ Footer Ends Here ---------------------------------------- */
+
+
+/* Cart */
+.prod-div{
+  margin: 48px;
+  width: 280px;
+  display: inline-block;
+}
+
+#cartImg {
+  height: 290px;
+  width: 290px;
+  cursor: pointer;
+}
+
+#prod-head {
+  color: rgb(71, 40, 40);
+  margin-top: 10px;
+}
+
+#prod-price {
+  margin: 5px 0;
+  color: rgb(7, 82, 87);
+}
+
+.cart-btn {
+  padding: 10px;
+  font-size: 1.5rem;
+  background-color: rgb(1, 1, 27);
+  color: white;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-count {
+  background-color: red;
+  padding: 2px 5px;
+  color: black;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Cart div */
+
+.itemInCart {
+  display: flex;
+  padding: 20px;
+  margin: 20px;
+  border-bottom: 2px solid grey;
+  height: 150px;
+  width: 60%;
+}
+
+.cartImage {
+  height: 100px;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.product-detail-div {
+  /* display: inline-block; */
+}
+
+.productName {
+  color: rgb(87, 86, 86);
+  font-size: 1.5rem;
+}
+
+.productDescription {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  color: rgb(2, 27, 29);
+}
+
+.product-offerPrice {
+  color: darkred;
+  font-size: 2rem;
+}
+
+.product-discount {
+  color: rgb(3, 53, 53);
+}
+
+.remove_btn {
+  padding: 5px;
+  color: white;
+  background-color: rgb(4, 0, 12);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.empty-cart-heading {
+  text-align: center;
+  margin-top: 100px;
+}
+
+
+/*  */
+
+.delivery-main-container {
+  display: none;
+}
+
+.billShow {
+  margin: 10px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: right;
+}
+
+.money {
+  color: rgb(79, 80, 12);
+  font-weight: bold;
+}
+
+.checkout-btn {
+  padding: 10px 30px;
+  margin: 10px;
+  font-size: 2rem;
+  background-color: brown;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  left: 1180px;
+  /* top: 0; */
+}
+
+.itemInCart {
+  position: relative;
+  top: -120px;
+}
+
+.delivery-main-container {
+  border: 2px solid gray;
+  border-radius: 10px;
+  width: 35%;
+  background-color: black;
+  color: white;
+  margin: 20px auto;
+}
+
+.delHead {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#delivery-fname, #delivery-lname, #delivery-email, #delivery-address {
+  width: 95%;
+  padding: 8px;
+  margin: 10px 5px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.subcont1 {
+  text-align: center;
+}
+
+.butn {
+  padding: 5px 20px;
+  margin: 10px 0;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#billBtn {
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 2rem;
+  background-color: black;
+  border-radius: 5px;
+  color: rgb(134, 153, 187);
+  outline: none;
+  cursor: pointer;
+}

@@ -1,1 +1,0 @@
-# Fastrack-Clone-App

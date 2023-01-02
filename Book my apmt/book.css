@@ -1,0 +1,110 @@
+.center {
+  margin: 30px 20px 40px 50px;
+  display: flex;
+}
+
+#bookImg {
+  height: 530px;
+  width: 530px;
+  margin-right: 80px;
+}
+
+footer h1 {
+  text-align: center;
+  color: rgb(41, 41, 41);
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+footer p {
+  font-size: 1.5rem;
+  margin: 0 100px 40px 100px;
+  text-align: center;
+}
+
+.videoCall {
+  display: block;
+}
+
+.video, .visit {
+  display: inline-block;
+  margin-left: 50px;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  width: 40%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.checkbox {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.checkInput {
+  margin-right: 8px;
+  margin-bottom: 50px;
+}
+
+.captcha {
+  margin-left: 220px;
+  border: 1px solid grey;
+  width: fit-content;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.captchaInput {
+  margin-right: 8px;
+}
+
+.rotate {
+  margin-left: 50px;
+  font-size: 30px;
+  color: rgb(37, 96, 172);
+  cursor: pointer;
+}
+
+.btn {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  background-color: black;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+/* =============================================== Visit Store ============================= */
+
+.visitStore {
+    display: none;
+}
+
+.city, .store {
+    width: 48%;
+    margin-top: 0;
+}
+
+.city {
+    margin-right: 22px;
+}
+
+.date, .time {
+    width: 48%;
+}
+
+.date {
+    margin-right: 22px;
+}

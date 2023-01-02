@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fastrack.in</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/241a20b3c3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--------------------------- Header Starts Here ----------------------------->
+    <header class="header">
+      <!---------------------- Top Header Starts Here -------------------------->
+      <div class="top">
+        <div class="left">
+          <a href="#" id="brands">BRANDS</a>
+          <a href="#"
+            ><span id="currency">CURRENCY SELECTOR</span>
+            <i class="fa-solid fa-chevron-down down"></i>
+            <i class="fa-solid fa-chevron-up up" style="display: none"></i>
+          </a>
+        </div>
+        <div class="right">
+          <a href="#" id="login">LOGIN</a>
+          <a href="#">WISHLIST</a>
+          <a href="#" class="bookMyApmt">BOOK MY APPOINTMENT</a>
+          <button class="cart" onclick="cart_button()">
+            <i class="fa fa-shopping-cart" id="cart_font" aria-hidden="true"></i
+            >Cart<span class="cart-number"></span>
+          </button>
+        </div>
+      </div>
+      <!---------------------- Top Header Ends Here ------------------------------->
+
+      <!-------------------- Bottom Header Starts Here ---------------------------->
+      <div class="bottom">
+        <div class="left">
+          <a href="#" class="location"><i class="fa-solid fa-location-dot"></i></a>
+          <a href="#" id="watch">WATCHES</a>
+          <a href="#" id="audio">SMART & AUDIO</a>
+          <a href="#" id="eyewear">EYEWEAR</a>
+        </div>
+        <div class="right">
+          <svg
+            id="logo"
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 403.27 55.37"
+          >
+          <title>fastrack_logo</title>
+            <path
+              class="cls-1"
+              d="M1.23,56.29l8-32.81s-3.36.26-4.39-.78c-.78-.52-1.29-1.81-1.81-2.33a16.48,16.48,0,0,1-1.55-3.1h9.3S13.11,6.68,16.73,3.84c3.88-3.62,8-2.58,14.21-2.58H51.86a14.74,14.74,0,0,1-1.81,3.36,3.53,3.53,0,0,1-2.58,1.55H36.1c-1.55,0-3.88-.26-4.91.52a5.81,5.81,0,0,0-2.07,3.62c-.52,1.55-2.07,7-2.07,7H44.89a23.53,23.53,0,0,1-1.81,3.36c-.77,1.29-2.32,2.84-3.1,2.84s-14.21-.26-14.21-.26l-8,33.07Z"
+              transform="translate(-1.23 -1)"
+            ></path>
+            <path
+              class="cls-1"
+              d="M50.06,17.28s1.29,2.58,2.07,3.87A5.42,5.42,0,0,0,55,23.22c.78.26,9.56,0,12.14,0,2.33,0,10.33-.26,12.4.78s1.81,2.84,1.29,4.13a5.62,5.62,0,0,1-5.43,3.62H55.48c-1.29,0-7-.26-9.82,1.81a11.47,11.47,0,0,0-4.13,6.2c-.78,2.07-1.81,5.68-2.07,6.72s-1,4.91-.52,6.2c.26,1.55.26,3.1,4.39,3.36,3.87.26,10.07.26,12.66.26,2.33,0,9.56,0,10.85-.52a7,7,0,0,0,2.84-2.58l1.55-2.33s-7.49.26-9.3.26A10.23,10.23,0,0,1,57,49.83c-.78-.52-1.55-1.81-.78-4.13.52-2.33.78-3.62,1-4.65.52-1,.78-2.58,1.55-3.36a6.84,6.84,0,0,1,4.39-1.55H79L74.08,56.29H90.36l6.72-27.13s1-5.17.52-7.49-2.84-4.39-8-4.39Z"
+              transform="translate(-1.23 -1)"
+            ></path>
+            <path
+              class="cls-1"
+              d="M154.68,17.53H121.1c-.52,0-7.23-.52-11.11,2.33a12.58,12.58,0,0,0-4.65,7.49c-.78,2.07-2.07,7.49-2.33,8.27,0,.78-.52,3.62,0,4.39.78,1,1.29,2.58,4.65,2.58,3.62,0,11.11-.26,15-.26s8,0,9,.52a3.57,3.57,0,0,1,2.84,3.1c0,1.55-.26,3.87-1.29,4.65s-10.59.52-12.66.52H97.85a8,8,0,0,0,2.84,4.13c1.81,1.55,9.56,1,12.66,1h22.47A15.2,15.2,0,0,0,144.35,54c3.1-2.33,4.39-4.65,5.94-10.08,1.29-5.42,1.55-5.42,1.81-7.23s.52-2.84-.78-4.13c-.78-1.55-3.87-1.81-7.75-1.81H126.27c-1,0-4.91,0-6.2-1.55a3.43,3.43,0,0,1-.77-3.62c.26-.78.77-2.33,6.46-2.33h22c1,0,3.36,0,4.65-1.55,1-1.55,2.33-4.14,2.33-4.14Z"
+              transform="translate(-1.23 -1)"
+            ></path>
+            <path
+              class="cls-1"
+              d="M172,7.72h16.53l-2.58,9.56h17.31a13,13,0,0,1-1.81,4.13c-1.29,1.81-3.62,1.81-4.91,2.07H184.65s-4.91,19.89-5.17,20.67-1,3.87-.78,4.65c.52.78,1.81,2.58,7.75,2.32h10.08a19.64,19.64,0,0,1-2.07,3.36,4.13,4.13,0,0,1-2.33,1.81H167.08A5.38,5.38,0,0,1,162.69,54c-1-1.81-.78-5.42,0-8.53,1-3.1,5.43-22,5.43-22s-2.84-.26-3.87-.52a7.2,7.2,0,0,1-2.84-2.84,17.28,17.28,0,0,1-1.55-2.84h9.82Z"
+              transform="translate(-1.23 -1)"
+            ></path>
+            <path
+              class="cls-1"
+              d="M202,56l8.27-32.55s.52-3.1,1.29-4.14a4.79,4.79,0,0,1,4.39-2.07c2.84,0,11.37.26,11.37.26s-7,28.68-7.49,30.48S219,52.67,218,54c-.78,1-1.29,2.33-4.65,2.33C210,56.54,202,56,202,56Z"
+              transform="translate(-1.23 -1)"
+            ></path>
+            <path
+              class="cls-1"
+              d="M254.4,17.53a23.1,23.1,0,0,0,2.07,3.36c1,1.55,1.81,2.58,2.84,2.84h13.18c2.33,0,8.52-.52,10.59.26,1.81.52,3.1,1.29,2.33,3.87A6.17,6.17,0,0,1,280.75,32H267.06c-2.33,0-10.33-.52-14.47.78s-5.17,2.58-7,7.75a30,30,0,0,0-2.32,9.82c-.26,1-.52,3.62.78,4.65,1.55,1,4.65,1.29,9.56,1.29h14.72c1.55,0,3.36.52,5.94-3.1l1.29-2.07s-7.75.26-9.3.26c-1.81,0-4.39-.78-5.17-1.55-.52-.52-1-2.07-.26-5.42.78-3.1,1-5.43,2.84-6.72,1.55-1.55,5.94-1.55,8.53-1.55h11.11l-4.91,20.15H294.7s6.46-25.32,6.46-26.35c.26-1,1.81-8,0-10.33-2.07-2.33-8.78-2.07-12.14-2.07Z"
+              transform="translate(-1.23 -1)"
+            ></path>
+            <path
+              class="cls-1"
+              d="M355.41,17.28H323.64a13.18,13.18,0,0,0-8,2.07,15.21,15.21,0,0,0-6.2,8.79c-1.29,4.13-3.62,14.47-4.13,16.53s-1,5.68-.52,7.49c.77,2.07,2.32,4.13,7.23,4.13h24.8c1.29,0,3.62.26,5.17-1a17.91,17.91,0,0,0,2.58-4.13s-14.72,0-17.05-.26-4.91-.52-5.68-1.81c-.52-1.29.26-5.68,1-8.27.52-2.58,2.84-11.63,3.1-12.4s.78-3.1,1.55-3.87a7.39,7.39,0,0,1,4.39-1.29h18.34a4.48,4.48,0,0,0,3.62-2.58c.52-1,1.55-3.36,1.55-3.36Z"
+              transform="translate(-1.23 -1)"
+            ></path>
+            <path
+              class="cls-1"
+              d="M365.49,1.26,351.8,56l16.53.26,3.88-16.54,10.33-6.46,7.23,23H404.5L394.17,24.77a12.69,12.69,0,0,0,4.91-3.87c1.81-2.33,3.36-7,3.36-7L374.79,29.68,382,1Z"
+              transform="translate(-1.23 -1)"
+            ></path>
+            <path
+              class="cls-1"
+              d="M227,26.06s2.07-4.39,4.91-6.2,5.68-2.33,10.08-2.33,6.71-.26,6.71-.26-1.29,3.1-2.07,4.39c-1,1.29-2.07,2.58-3.62,2.58h-9c-2.32.26-6.2,1-7,1.81Z"
+              transform="translate(-1.23 -1)"
+            ></path>
+          </svg>
+          <a href="#" id="bags">BAGS & MORE</a>
+          <a href="#" id="perfumes">PERFUMES</a>
+          <a href="#" id="offers">OFFERS AND MORE</a>
+          <a href="#" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#" class="cancel-icon"><i class="fa-solid fa-xmark"></i></a>
+          <!-------------------------------- Bottom Header Ends Here ----------------------------->
+        </div>
+      </div>
+
+      <!-----------------------Section on click Search Starts Here --------------------------------->
+
+    
+      <div class="search-click">
+        <input type="text" id="myInput">
+        <i class="fa-solid fa-microphone"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      
+      <!-----------------------Section on click Search Ends Here --------------------------------->
+
+      <!-------------------------- Cart functionality starts here --------------------------------->
+
+      <section class="main2">
+             
+      </section>
+
+<!-------------------------- Cart functionality ends here --------------------------------->
+
+      <!----------------------- Section on hovering "Watches" Starts Here ----------------------------->
+      <div id="watch_hover">
+        <div class="watch_buy">
+          <div class="watch_style">
+            <div class="watch_shopFor">
+              <a href="#">
+                <h2>Shop For</h2>
+              </a>
+              <figure class="watch_for_him watch_images">
+                <a href="#" id="fig_caption">
+                  <img
+                    src="https://www.fastrack.in/wps/wcm/connect/fastrack/2ddd6b43-acd0-44b2-a3b8-ae39866fcba0/For_Him_W.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-2ddd6b43-acd0-44b2-a3b8-ae39866fcba0-nE.vbJ7"
+                    alt="Watch for him"
+                  />
+                  <figcaption>Him</figcaption>
+                </a>
+              </figure>
+              <figure class="watch_for_her watch_images">
+                <a href="#" id="fig_caption">
+                  <img
+                    src="https://www.fastrack.in/wps/wcm/connect/fastrack/179beeed-d72b-4264-a498-f4e6e16a0d2e/For_Her_W.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-179beeed-d72b-4264-a498-f4e6e16a0d2e-nE.vnAH"
+                    alt="Watch for her"
+                  />
+                  <figcaption>Her</figcaption>
+                </a>
+              </figure>
+              <figure class="watch_for_them watch_images">
+                <a href="#" id="fig_caption">
+                  <img
+                    src="https://www.fastrack.in/wps/wcm/connect/fastrack/8d338582-6e93-4608-a2ef-4903825ac4b6/For_Them_W.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-8d338582-6e93-4608-a2ef-4903825ac4b6-nE.vu5e"
+                    alt="Watch for them"
+                  />
+                  <figcaption>Them</figcaption>
+                </a>
+              </figure>
+            </div>
+            <div class="watch_shopByStyle">
+              <a href="#">
+                <h2>Shop By Style</h2>
+              </a>
+              <figure class="watch_casual watch_images">
+                <a href="#" id="fig_caption">
+                  <img
+                    src="https://www.fastrack.in/wps/wcm/connect/fastrack/30554687-ca2d-43b0-91f6-569ce60cddc8/Style_Casual_W.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-30554687-ca2d-43b0-91f6-569ce60cddc8-nE.vFNB"
+                    alt="Casual Watches"
+                  />
+                  <figcaption>Casual</figcaption>
+                </a>
+              </figure>
+              <figure class="watch_fashion watch_images">
+                <a href="#" id="fig_caption">
+                  <img
+                    src="https://www.fastrack.in/wps/wcm/connect/fastrack/b2d8324b-fb9b-4491-af9e-f043335bd468/Style_Fashion_W.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-b2d8324b-fb9b-4491-af9e-f043335bd468-nE.vOB1"
+                    alt="Fashion watches"
+                  />
+                  <figcaption>Fashion</figcaption>
+                </a>
+              </figure>
+              <figure class="watch_sporty watch_images">
+                <a href="#" id="fig_caption">
+                  <img
+                    src="https://www.fastrack.in/wps/wcm/connect/fastrack/7d011ca0-0b40-4900-98f2-a99dbeef140d/Style_Sporty_W.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-7d011ca0-0b40-4900-98f2-a99dbeef140d-nE.vZVH"
+                    alt="Sporty watches"
+                  />
+                  <figcaption>Sporty</figcaption>
+                </a>
+              </figure>
+              <figure class="watch_tees watch_images">
+                <a href="#" id="fig_caption">
+                  <img
+                    src="https://www.fastrack.in/wps/wcm/connect/fastrack/abc5c924-5340-403e-ace2-a1c07fc1ff96/Style_Tees_W.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-abc5c924-5340-403e-ace2-a1c07fc1ff96-nE.w7iA"
+                    alt="Tees watches"
+                  />
+                  <figcaption>Tees</figcaption>
+                </a>
+              </figure>
+            </div>
+            <div class="watch_shopCollectibles">
+              <a href="#">
+                <h2>Shop Collectibles</h2>
+              </a>
+              <figure class="watch_batman watch_images">
+                <a href="#" id="fig_caption">
+                  <img
+                    src="https://www.fastrack.in/wps/wcm/connect/fastrack/fdea4a8c-67f3-4724-b115-e643d4faeabf/Batman.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-fdea4a8c-67f3-4724-b115-e643d4faeabf-nZkIE7b"
+                    alt="Batman watches"
+                  />
+                  <figcaption>Batman</figcaption>
+                </a>
+              </figure>
+              <figure class="watch_woman watch_images">
+                <a href="#" id="fig_caption">
+                  <img
+                    src="https://www.fastrack.in/wps/wcm/connect/fastrack/c881be5e-7964-42ee-ba62-34b39b2f1ec1/FTWW.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-c881be5e-7964-42ee-ba62-34b39b2f1ec1-nZkIZW1"
+                    alt="Wonder woman watches"
+                  />
+                  <figcaption>Wonder Woman</figcaption>
+                </a>
+              </figure>
+              <figure class="watch_cocacola watch_images">
+                <a href="#" id="fig_caption">
+                  <img
+                    src="https://www.fastrack.in/wps/wcm/connect/fastrack/0737430b-0668-4bd3-9aeb-c24a1f012906/xCollect_Coke_W.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-0737430b-0668-4bd3-9aeb-c24a1f012906-nNU64wD"
+                    alt="Cocacola watches"
+                  />
+                  <figcaption>Coca Cola Edition</figcaption>
+                </a>
+              </figure>
+              <figure class="watch_avengers watch_images">
+                <a href="#" id="fig_caption">
+                  <img
+                    src="https://www.fastrack.in/wps/wcm/connect/fastrack/717ea655-0aa9-43a2-93f3-41424a5f1c82/xCollect_Avengers_EG_W.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-717ea655-0aa9-43a2-93f3-41424a5f1c82-nE.wgRf"
+                    alt="Avengers watches"
+                  />
+                  <figcaption>Avengers</figcaption>
+                </a>
+              </figure>
+            </div>
+          </div>
+          <button id="watch_btn">View All</button>
+        </div>
+        <a href="#"
+          ><img
+            id="watch_img"
+            src="https://www.fastrack.in/wps/wcm/connect/fastrack/ca2522ff-016c-4abc-bf9c-4a9e43800a20/740x1080_curv.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-ca2522ff-016c-4abc-bf9c-4a9e43800a20-o5bDxkE"
+            alt=""
+        /></a>
+      </div>
+      <!----------------------- Section on hovering "Watches" Ends Here ----------------------------->
+
+      <!------------------- Section on hovering "Smart and Audio" Starts Here ----------------------->
+      <div id="audio_hover">
+        <div class="watch_neckbands">
+          <div class="watches_bands">
+            <a href="#">
+              <h2>Smart Watches & Bands</h2>
+            </a>
+            <a href="#">Reflex Smart Watch</a>
+            <a href="#">Reflex 3.0</a>
+            <a href="#">Reflex Strap</a>
+            <button>View All</button>
+          </div>
+          <div class="watches_wireless">
+            <a href="#">
+              <h2>Wireless Audio</h2>
+            </a>
+            <a href="#">Wireless Headphones</a>
+            <a href="#">True Wireless Earbuds</a>
+            <a href="#">Neckband</a>
+            <button>View All</button>
+          </div>
+        </div>
+        <figure class="figure">
+          <a href="#">
+            <img
+              src="https://www.fastrack.in/wps/wcm/connect/fastrack/8d0f1e74-d429-4787-8db3-1462afd2cc0e/350x262.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-8d0f1e74-d429-4787-8db3-1462afd2cc0e-o5bFpOe"
+              alt=""
+            />
+          </a>
+          <a href="#">
+            <img
+              src="https://www.fastrack.in/wps/wcm/connect/fastrack/e96fdef1-442d-4080-8253-3b6281b297ae/Header_350px.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-e96fdef1-442d-4080-8253-3b6281b297ae-nUCdA97"
+              alt=""
+            />
+          </a>
+        </figure>
+      </div>
+      <!------------------- Section on hovering "Smart and Audio" Ends Here ----------------------->
+
+      <!-------------------- Section on hovering "Bags & MORE" Starts Here ---------------------------->
+      <div id="bags_hover">
+        <div class="bags_content">
+          <div class="bags_style">
+            <div class="bags_guys">
+              <a href="#">
+                <h2 id="bag_heading">Styles for Guys</h2>
+              </a>
+              <a href="#">Backpacks</a>
+              <a href="#">Rucksacks</a>
+              <a href="#">Duffle Bags</a>
+              <a href="#">Belts</a>
+              <a href="#">Wallets</a>
+            </div>
+            <div class="bags_girls">
+              <a href="#">
+                <h2 id="bag_heading">Styles for Girls</h2>
+              </a>
+              <a href="#">Backpacks</a>
+              <a href="#">Handbags</a>
+              <a href="#">Sling & Clutches</a>
+              <a href="#">Wallets</a>
+            </div>
+            <div class="bags_category">
+              <a href="#">
+                <h2 id="bag_heading">Shop By Category</h2>
+              </a>
+              <a href="#">Bags</a>
+              <a href="#">Belts</a>
+              <a href="#">Wallets</a>
+              <a href="#">Perfumes</a>
+              <a href="#">Face Mask</a>
+              <a href="#">Pop Sockets</a>
+            </div>
+          </div>
+          <a href="#" id="bags_img">
+            <img
+              src="https://www.fastrack.in/wps/wcm/connect/fastrack/814073e3-1f98-4250-b164-f41a7176c581/1278x598_ftbags.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-814073e3-1f98-4250-b164-f41a7176c581-n-M-MoI"
+              alt=""
+          /></a>
+        </div>
+      </div>
+      <!---------------------- Section on hovering "Bags & MORE" Ends Here -------------------------->
+
+      <!---------------------- Section on hovering "Perfumes" Starts Here ------------------------->
+
+      <div id="perfumes_hover">
+        <div class="perfumes_view">
+          <div class="perfumes_both">
+            <div class="perfumes_guys">
+              <a href="#">
+                <h2>Shop For Guys</h2>
+              </a>
+              <a href="#">Beat</a>
+              <a href="#">Trance</a>
+              <a href="#">Pulse</a>
+            </div>
+            <div class="perfumes_girls">
+              <a href="#">
+                <h2>Shop For Girls</h2>
+              </a>
+              <a href="#">Beat</a>
+              <a href="#">Trance</a>
+              <a href="#">Pulse</a>
+            </div>
+          </div>
+          <button>View All</button>
+        </div>
+        <figure>
+          <a href="#" id="perfumes_img">
+            <img
+              src="https://www.fastrack.in/wps/wcm/connect/fastrack/1a5a2651-8919-4f4e-911e-4de0a1e44bc5/1920x600-min+%285%29.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-1a5a2651-8919-4f4e-911e-4de0a1e44bc5-nETGb3O"
+              alt="img"
+              style="width: auto; padding-left: 12px"
+            />
+            <figcaption>SIGNATURE UNISEX PERFUME</figcaption>
+          </a>
+        </figure>
+      </div>
+      <!---------------------- Section on hovering "Perfumes" Ends Here ------------------------->
+
+      <!----------------- Section on hovering "Offers And More" Starts Here --------------------->
+
+      <div id="offers_hover">
+        <a href="#">
+          <img
+            src="https://www.fastrack.in/wps/wcm/connect/fastrack/7ac01800-8f72-40d2-ad3e-5e1856ecedab/1200x628_reflex_watch.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-7ac01800-8f72-40d2-ad3e-5e1856ecedab-o5bJ0Kk"
+            alt=""
+          />
+        </a>
+        <a href="#">
+          <img
+            src="https://www.fastrack.in/wps/wcm/connect/fastrack/d324e0d0-934e-4493-b4fb-81d5c2a8639d/1200x628+%282%29.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-d324e0d0-934e-4493-b4fb-81d5c2a8639d-nETnSy4"
+            alt=""
+          />
+        </a>
+        <a href="#">
+          <img
+            src="https://www.fastrack.in/wps/wcm/connect/fastrack/6578a964-7a8e-4e7b-9f13-1a05f2dc0138/1200x628.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-6578a964-7a8e-4e7b-9f13-1a05f2dc0138-nKssKd3"
+            alt=""
+          />
+        </a>
+      </div>
+    </header>
+
+    <!----------------- Section on hovering "Offers And More" Ends Here --------------------->
+
+    <!--------------------------------------- Header Ends Here --------------------------------->
+
+
+
+    <!-- ------------------- Section on click "CURRENCY SELECTOR" starts here ------------------ -->
+
+    <div id="currency_click">
+      <h3>SELECT A CURRENCY</h3>
+      <button>INR ₹</button>
+      <button>USD $</button>
+    </div>
+    <!--------------------- Section on click "CURRENCY SELECTOR" ends here ----------------------->
+    
+    <!-------------------------- Section on click "LOGIN" starts here ----------------------------->
+
+    <div id="login_click">
+      <figure>
+        <img
+          src="https://www.fastrack.in/wps/wcm/connect/fastrack/f391e0c4-c55a-4ceb-b12b-e1edb7c19432/fastrack.svg?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-f391e0c4-c55a-4ceb-b12b-e1edb7c19432-nv8vKiF"
+          alt="logo"
+        />
+      </figure>
+      <div class="login_signup">
+        <div class="login">
+          <div class="otp_login log">
+            <a class="otp_anchor">LOGIN VIA OTP</a>
+            <i class="fa-solid fa-plus plus"></i>
+            <fieldset class="otp_login_inside">
+              <legend>LOGIN VIA OTP</legend>
+              <div class="mob_email">
+                <div class="mobile_login">MOBILE</div>
+                <div class="email_login">E-MAIL</div>
+              </div>
+              <h2>LOGIN USING MOBILE NUMBER AND OTP</h2>
+              <div class="input">
+                <input class="country" type="select" value="91" />
+                <input
+                  class="phone"
+                  type="number"
+                  placeholder="PHONE NUMBER *"
+                />
+              </div>
+              <button id="otp_btn">Request OTP</button>
+            </fieldset>
+          </div>
+          <div class="password_login log">
+            <a class="password_anchor">LOGIN VIA PASSWORD</a>
+            <i class="fa-solid fa-plus plus plus_password"></i>
+            <fieldset class="password_login_inside">
+              <legend>LOGIN VIA PASSWORD</legend>
+              <input
+                class="mobile_input"
+                type="text"
+                placeholder="MOBILE NUMBER/EMAIL *"
+              />
+              <div class="password_div">
+                <input
+                  class="password_input"
+                  type="text"
+                  placeholder="PASSWORD *"
+                />
+                <a><i class="fa-sharp fa-solid fa-eye-slash"></i></a>
+                <a><i class="fa-solid fa-eye eye"></i></a>
+              </div>
+              <div class="remember">
+                <div class="check">
+                  <input type="checkbox" />
+                  <a href="#">REMEMBER ME</a>
+                </div>
+                <div class="forgot"><a href="#">FORGOT PASSWORD?</a></div>
+              </div>
+              <button>SUBMIT</button>
+            </fieldset>
+          </div>
+          <div class="fb_login log">
+            <a class="fb_anchor">LOGIN VIA FACEBOOK / GOOGLE</a>
+            <i class="fa-solid fa-plus plus plus_fb"></i>
+            <div class="heading">
+              <h2>LOGIN USING SOCIAL ACCOUNT</h2>
+              <div class="buttons">
+                <button class="facebook">
+                  <i class="fa-brands fa-facebook-f fb_icon"></i>Facebook
+                </button>
+                <button class="google">
+                  <i class="fa-brands fa-google-plus-g google_icon"></i>Google
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="signup">
+          <p>NEW USER? <b>CREATE AN ACCOUNT</b></p>
+          <ul>
+            <h1>Benefits of Creating an New Account</h1>
+
+            <li>
+              You will get Benefits from our loyalty Program called Encircle
+              <br />
+              Which entitles you to earn points for your Purchase which you can
+              redeem in Subsequent Purchases
+            </li>
+            <li>
+              You will get Special Previews to our Limited Collections and
+              Sales.
+            </li>
+            <li>You will Receive offers tailor-made for you</li>
+          </ul>
+          <button class="signup_btn">SIGN UP NOW</button>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------------- Section on click "SIGN UP NOW" starts here ----------------->
+
+    <div id="signup_click">
+      <figure>
+        <img
+          src="https://www.fastrack.in/wps/wcm/connect/fastrack/f391e0c4-c55a-4ceb-b12b-e1edb7c19432/fastrack.svg?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-f391e0c4-c55a-4ceb-b12b-e1edb7c19432-nv8vKiF"
+          alt="logo"
+        />
+      </figure>
+      <fieldset class="signup_box">
+        <legend>SIGNUP</legend>
+        <select id="title" aria-placeholder="TITLE *">
+          <option></option>
+          <option>Mr.</option>
+          <option>Mrs.</option>
+        </select>
+        <input id="first_name" type="text" placeholder="FIRST NAME *" />
+        <input id="last_name" type="text" placeholder="LAST NAME*" />
+        <select id="country">
+          <option>91</option>
+          <option>61</option>
+          <option>1</option>
+          <option>1</option>
+          <option>65</option>
+          <option>44</option>
+          <option>971</option>
+          <option>64</option>
+          <option>60</option>
+          <option>49</option>
+          <option>40</option>
+          <option>254</option>
+          <option>31</option>
+        </select>
+        <input id="mobile_no" type="number" placeholder="MOBILE NUMBER *" />
+        <input id="email" type="email" placeholder="EMAIL ID *" />
+        <div id="password">
+          <input type="password" placeholder="PASSWORD *" class="password" />
+          <a><i class="fa-sharp fa-solid fa-eye-slash"></i></a>
+        </div>
+        <div id="receive">
+          <input type="checkbox" name="" id="checkbox" checked />
+          <h2>Receive our newsletters and special offers.</h2>
+        </div>
+        <div id="t_c">
+          <input type="checkbox" name="" id="checkbox" />
+          <h2>
+            I agree to the <a>Terms & Conditions*</a> and <a>Privacy Policy</a>
+          </h2>
+        </div>
+        <button id="register">REGISTER</button>
+      </fieldset>
+    </div>
+
+    <!---------------------------- Section on click "SIGN UP NOW" ends here ----------------->
+
+    <!-------------------------------- Section on click "Request OTP" Starts Here ------------------->
+
+    <div class="otp-container">
+      <figure>
+        <img
+          class="logo"
+          src="https://www.fastrack.in/wps/wcm/connect/fastrack/f391e0c4-c55a-4ceb-b12b-e1edb7c19432/fastrack.svg?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-f391e0c4-c55a-4ceb-b12b-e1edb7c19432-nv8vKiF"
+          alt="logo"
+        />
+      </figure>
+      <div class="otp-div">
+        <fieldset>
+          <legend>
+            <h2 class="verify-mobile-otp-heading">VERIFY MOBILE OTP</h2>
+          </legend>
+          <p class="otp-para">OTP SENT TO MOBILE NO.</p>
+          <form>
+            <label for="otp" class="input-label">ENTER OTP*</label>
+            <div>
+              <input type="text" class="otp-input" required />
+            </div>
+            <div>
+              <button class="verify-OTP-Btn" type="button">Verify OTP</button>
+            </div>
+          </form>
+        </fieldset>
+        <p class="otp-resend">
+          NOT RECEIVED YOUR CODE ? <a href="">RESEND OTP</a>
+        </p>
+      </div>
+    </div>
+
+    <!-------------------------------- Section on click "Request OTP" Ends Here -------------------------->
+
+    <!------------------------------------- Section on click "LOGIN" ends here --------------------------->
+
+    <!---------------------------------- Slider(just after header) starts here --------------------------->
+
+    <main class="main">
+    <!-- radio buttons start -->
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+        <input type="radio" name="radio-btn" id="radio5" />
+        <input type="radio" name="radio-btn" id="radio6" />
+        <input type="radio" name="radio-btn" id="radio7" />
+        <!-- radio buttons end -->
+        <!-- slide images starts -->
+        <div class="slide first">
+          <a href=""
+            ><img
+              src="https://www.fastrack.in/wps/wcm/connect/fastrack/10a11e13-59c3-41db-9dd7-e246560c6a01/desktop/1920x600.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-10a11e13-59c3-41db-9dd7-e246560c6a01-desktop-odKxB.9&impolicy=pqlow"
+          /></a>
+        </div>
+        <div class="slide">
+          <a href=""
+            ><img
+              src="https://www.fastrack.in/wps/wcm/connect/fastrack/a4c96611-79b7-4e0c-ad95-b4b9103f75ea/desktop/1920X600.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-a4c96611-79b7-4e0c-ad95-b4b9103f75ea-desktop-odKyKDE&impolicy=pqlow"
+          /></a>
+        </div>
+        <div class="slide">
+          <a href=""
+            ><img
+              src="https://www.fastrack.in/wps/wcm/connect/fastrack/f920fa7f-9457-46c8-bc08-08430097a243/desktop/Fastrack_banner_1920x600.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-f920fa7f-9457-46c8-bc08-08430097a243-desktop-odlstBE&impolicy=pqlow"
+          /></a>
+        </div>
+        <div class="slide">
+          <a href=""
+            ><img
+              src="https://www.fastrack.in/wps/wcm/connect/fastrack/52d91d6c-5737-4f0c-acb1-9cc3afa52898/desktop/1920x600.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-52d91d6c-5737-4f0c-acb1-9cc3afa52898-desktop-odcjsuC&impolicy=pqlow"
+          /></a>
+        </div>
+        <div class="slide">
+          <a href=""
+            ><img
+              src="https://www.fastrack.in/wps/wcm/connect/fastrack/41e2ea52-7d07-45eb-872e-c11d7453c5d8/desktop/1920X600.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-41e2ea52-7d07-45eb-872e-c11d7453c5d8-desktop-oblwNQn&impolicy=pqlow"
+          /></a>
+        </div>
+        <div class="slide">
+          <a href=""
+            ><img
+              src="https://www.fastrack.in/wps/wcm/connect/fastrack/85ffd987-1120-48a6-b25d-7822da4300be/desktop/1920x600.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-85ffd987-1120-48a6-b25d-7822da4300be-desktop-od6.X5P&impolicy=pqlow"
+          /></a>
+        </div>
+        <div class="slide">
+          <a href=""
+            ><img
+              src="https://www.fastrack.in/wps/wcm/connect/fastrack/87dd3813-f189-408d-a8c2-d2efed89ec2e/desktop/1920x600.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-87dd3813-f189-408d-a8c2-d2efed89ec2e-desktop-nYI4n-.&impolicy=pqlow"
+          /></a>
+        </div>
+        <!-- slide images end -->
+        <!-- auto navigation starts -->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+          <div class="auto-btn5"></div>
+          <div class="auto-btn6"></div>
+          <div class="auto-btn7"></div>
+        </div>
+        <!-- auto navigation ends -->
+        <!-- manual navigation starts -->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+          <label for="radio5" class="manual-btn"></label>
+          <label for="radio6" class="manual-btn"></label>
+          <label for="radio7" class="manual-btn"></label>
+        </div>
+        <!-- manual navigation ends -->
+      </div>
+    </div>
+
+    <!---------------------------------- Slider(just after header) Ends Here ------------------------------>
+
+    <!------------------------------------- Fastrack Essentials Starts Here ------------------------------->
+
+    <section>
+   <div class="trending_product product">
+    <div class="trending_watch_heading">
+        <h2>FASTRACK ESSENTIALS</h2>
+    </div>
+    <div class="trending_watch_image">
+        <div class="watch_img">
+          <a href="">
+            <img src="https://www.fastrack.in/wps/wcm/connect/fastrack/3156c817-5671-4edf-b846-126830b1152a/7.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-3156c817-5671-4edf-b846-126830b1152a-nU9Vu95" class="watch" alt="watch"></a>
+            <h5>GIRLS WATCHES</h5>
+        </div>
+        <div class="watch_img">
+          <a href="">
+            <img src="https://www.fastrack.in/wps/wcm/connect/fastrack/e158ebd3-893b-40c3-a139-ef745cdfc26b/4.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-e158ebd3-893b-40c3-a139-ef745cdfc26b-nU9.9Sx" class="watch" alt="watch"></a>
+            <h5>GUYS WATCHES</h5>
+        </div>
+        <div class="watch_img">   
+          <a href="">
+            <img src="https://www.fastrack.in/wps/wcm/connect/fastrack/efc2dbd8-3e9d-4803-8c44-72c52b215fbc/smartwatch.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-efc2dbd8-3e9d-4803-8c44-72c52b215fbc-o4jJ8DA" class="watch" alt="watch"></a>
+            <h5>SMART WATCHES</h5>
+        </div>
+        <div class="watch_img">
+          <a href="">
+            <img src="https://www.fastrack.in/wps/wcm/connect/fastrack/967e27d1-b298-4a82-9932-c9cfcf720af2/tees.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-967e27d1-b298-4a82-9932-c9cfcf720af2-nUa07AF" class="watch" alt="watch"></a>
+            <h5>TEES WATCHES</h5>
+        </div>
+        <div class="watch_img">
+          <a href="">
+            <img src="https://www.fastrack.in/wps/wcm/connect/fastrack/f2757815-3e89-4a93-8efc-f01220bcb8d3/TWE.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-f2757815-3e89-4a93-8efc-f01220bcb8d3-nZTyj7-" class="watch" alt="watch"></a>
+            <h5>EARPHONES</h5>
+        </div>
+        <div class="watch_img">
+          <a href="">
+            <img src="https://www.fastrack.in/wps/wcm/connect/fastrack/0d22aebb-e343-405b-b358-17c5bd768532/1.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-0d22aebb-e343-405b-b358-17c5bd768532-nU9VH6B" class="watch" alt="watch"></a>
+            <h5>BAGS</h5>
+        </div>
+        <div class="watch_img">
+          <a href="">
+            <img src="https://www.fastrack.in/wps/wcm/connect/fastrack/07166d76-040d-466e-b776-c30f2c87b29b/mask.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-07166d76-040d-466e-b776-c30f2c87b29b-nUa2m4g" class="watch" alt="watch"></a>
+            <h5>FACE MASKS</h5>
+        </div>
+        <div class="watch_img">
+          <a href="">
+            <img src="https://www.fastrack.in/wps/wcm/connect/fastrack/91a951ef-1105-4347-9478-36a231a678e7/essential_sunglasses2.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-91a951ef-1105-4347-9478-36a231a678e7-n3xtZUa" class="watch" alt="watch"></a>
+            <h5>PERFUMES</h5>
+        </div>
+        <div class="watch_img">
+          <a href="">
+            <img src="https://www.fastrack.in/wps/wcm/connect/fastrack/c9360da4-a0a1-4bbb-b659-c55db079e3ff/essential_wallet.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-c9360da4-a0a1-4bbb-b659-c55db079e3ff-n33o772" class="watch" alt="watch"></a>
+            <h5>BELTS</h5>
+        </div>
+        <div class="watch_img">
+          <a href="">
+            <img src="https://www.fastrack.in/wps/wcm/connect/fastrack/68296f46-ed24-4b8f-9150-2618a812f38f/B0398LBR02.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-68296f46-ed24-4b8f-9150-2618a812f38f-n33nXPd" class="watch" alt="watch"></a>
+            <h5>WALLETS</h5>
+        </div>
+    </div>
+  </div>
+    <button class="trending-prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="trending-next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+    <button class="prev-btn"><i class="fa-solid fa-circle"></i></button>
+    <button class="next-btn"><i class="fa-solid fa-circle"></i></button>
+    </section>
+
+    <!------------------------------------- Fastrack Essentials Ends Here ------------------------------->
+
+
+    <!---------------------------------------------- Video Starts Here --------------------------------->
+
+    </video> -->
+
+    <video id="video" src="https://www.fastrack.in/wps/wcm/connect/fastrack/b1ae772f-6d85-4bdd-99e2-2044bc2d361e/FT_Curv_1920x600.mp4?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-b1ae772f-6d85-4bdd-99e2-2044bc2d361e-o4yHpeu" autoplay muted></video>
+
+    <!----------------------------------------------- Video Ends Here ------------------------------------->
+
+    <!--------------------------------------------- Trending Starts Here ---------------------------------->
+
+    <section class="trending">
+      <h1>TRENDING</h1>
+      <figure class="trending-images">
+        <a href="">
+          <img class="trending-img trending-img1" src="https://www.fastrack.in/wps/wcm/connect/fastrack/3be2ce43-768f-4a12-83c6-b1a008759b6a/1X1.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-3be2ce43-768f-4a12-83c6-b1a008759b6a-nWy3Nko">
+        </a>
+        <a href="">
+          <img class="trending-img" src="https://www.fastrack.in/wps/wcm/connect/fastrack/fa9b2a68-1f85-4f2a-8bcf-19202c2ea8ef/1080x1080_tunes.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-fa9b2a68-1f85-4f2a-8bcf-19202c2ea8ef-nZ1av9V">
+        </a>
+        <a href="">
+          <img class="trending-img trending-img3" src="https://www.fastrack.in/wps/wcm/connect/fastrack/e40d8727-afa2-4175-942f-7954d778dc4b/720x720_ftbags.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-e40d8727-afa2-4175-942f-7954d778dc4b-n.ewVSY">
+        </a>
+      </figure>
+    </section>
+
+    <!---------------------------------------------- Trending Ends Here ---------------------------------->
+
+    <!---------------------------------------- Trending Products Starts Here ----------------------------->
+
+    <section class="trending-products">
+      <h1>TRENDING PRODUCTS</h1>
+      <div class="trending-products-images">
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38074AP01_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Play Smart Watch with Silicone Black Strap</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 4995</span>
+        <span class="old-price">₹ 7995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38077AP01_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Play Plus Smart Watch With Black Strap and Bluetooth Calling</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 6995</span>
+        <span class="old-price">₹ 9995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38072AP01_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Vox Digital Silicone Black Strap Watch</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 3995</span>
+        <span class="old-price">₹ 6995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38074AP03_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Play Smart Watch with Silicone Pink Strap</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 4995</span>
+        <span class="old-price">₹ 7995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38077AP02_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Play Plus Smart Watch With Blue Strap and Bluetooth Calling</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 6995</span>
+        <span class="old-price">₹ 9995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38072AP03_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Vox Digital Silicone Pink Strap Watch</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 3995</span>
+        <span class="old-price">₹ 6995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38077AP04_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Play Plus Smart Watch With Aqua Blue Strap and Bluetooth Calling</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 6995</span>
+        <span class="old-price">₹ 9995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/SWD90067PP04A_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex 3.0 Dual Toned Smart Band in Pink Strap & Green Accent</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 2295</span>
+        <span class="old-price">₹ 2995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38079PP01_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Hello Smart Watch with Silicone Black Strap</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 3995</span>
+        <span class="old-price">₹ 5995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38077AP03_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Play Plus Smart Watch With Pink Strap and Bluetooth Calling</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 6995</span>
+        <span class="old-price">₹ 9995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38073AP02_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Curv Smart Watch with Silicone Blue Strap</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 3745</span>
+        <span class="old-price">₹ 6495</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/SWD90067PP02A_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex 3.0 Dual Toned Smart Band in Midnight Black & Turquoise Accent</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 2295</span>
+        <span class="old-price">₹ 2995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38074AP02_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Play Smart Watch with Silicone Orange Strap</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 4995</span>
+        <span class="old-price">₹ 7995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38073AP01_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Curv Smart Watch with Silicone Black Strap</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 3745</span>
+        <span class="old-price">₹ 6495</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38079PP02_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Hello Smart Watch with Silicone Blue Strap</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 3995</span>
+        <span class="old-price">₹ 5995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img id="trendingLastImg" src="https://staticimg.titan.co.in/Fastrack/Catalog/68012PP12_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Hello Smart Watch with Silicone Blue Strap</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 855</span>
+        <span class="old-price">₹ 950</span>
+        </div>
+      </figure>
+      </div>
+      <button class="trendingProductButton1"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="trendingProductButton2"><i class="fa-solid fa-chevron-right"></i></button>
+    </section>
+
+    <!---------------------------------------- Trending Products Ends Here ----------------------------->
+
+    <section class="after-trending">
+      <h1 class="first-heading">GET YOURSELF A WATCH THAT REFLECTS YOUR STYLE! INTRODUCING FASTRACK REFLEX VOX! NOW AVAILABLE <a href="">Know More</a></h1>
+      <div class="first">
+      <a href="">
+        <img class="after-trending-img img1" src="https://www.fastrack.in/wps/wcm/connect/fastrack/abf94aff-6638-4d2b-9d93-fd5e1ab47d23/800x488.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-abf94aff-6638-4d2b-9d93-fd5e1ab47d23-nXzdHEo">
+      </a>
+      </div>
+      <h1 class="second-heading">YOU DO YOU AND COME AS YOU ARE! DIVE INTO THE WORLD OF LIMITLESS STYLE AND EXPRESSION WITH FASTRACK. <a href="">Know More</a></h1>
+      <div class="second">
+        <a href="">
+          <img class="after-trending-img img2" src="https://www.fastrack.in/wps/wcm/connect/fastrack/edf26fdb-502e-4253-8a74-67fe6f5e29d1/Youdoyou.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-edf26fdb-502e-4253-8a74-67fe6f5e29d1-nXzdHEo">
+        </a>
+      </div>
+    </section>
+
+    <!---------------------------------- Top Sellers Starts Here ------------------------------>
+
+    <section class="trending-products">
+      <h1>TOP SELLERS</h1>
+      <div class="trending-products-images">
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38074AP01_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Play Smart Watch with Silicone Black Strap</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 4995</span>
+        <span class="old-price">₹ 7995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38077AP01_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Play Plus Smart Watch With Black Strap and Bluetooth Calling</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 6995</span>
+        <span class="old-price">₹ 9995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38072AP01_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Vox Digital Silicone Black Strap Watch</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 3995</span>
+        <span class="old-price">₹ 6995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38074AP03_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Play Smart Watch with Silicone Pink Strap</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 4995</span>
+        <span class="old-price">₹ 7995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38077AP02_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Play Plus Smart Watch With Blue Strap and Bluetooth Calling</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 6995</span>
+        <span class="old-price">₹ 9995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38072AP03_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Vox Digital Silicone Pink Strap Watch</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 3995</span>
+        <span class="old-price">₹ 6995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38077AP04_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Play Plus Smart Watch With Aqua Blue Strap and Bluetooth Calling</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 6995</span>
+        <span class="old-price">₹ 9995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/SWD90067PP04A_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex 3.0 Dual Toned Smart Band in Pink Strap & Green Accent</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 2295</span>
+        <span class="old-price">₹ 2995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38079PP01_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Hello Smart Watch with Silicone Black Strap</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 3995</span>
+        <span class="old-price">₹ 5995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38077AP03_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Play Plus Smart Watch With Pink Strap and Bluetooth Calling</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 6995</span>
+        <span class="old-price">₹ 9995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38073AP02_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Curv Smart Watch with Silicone Blue Strap</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 3745</span>
+        <span class="old-price">₹ 6495</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/SWD90067PP02A_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex 3.0 Dual Toned Smart Band in Midnight Black & Turquoise Accent</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 2295</span>
+        <span class="old-price">₹ 2995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38074AP02_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Play Smart Watch with Silicone Orange Strap</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 4995</span>
+        <span class="old-price">₹ 7995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38073AP01_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Curv Smart Watch with Silicone Black Strap</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 3745</span>
+        <span class="old-price">₹ 6495</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img src="https://staticimg.titan.co.in/Fastrack/Catalog/38079PP02_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Hello Smart Watch with Silicone Blue Strap</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 3995</span>
+        <span class="old-price">₹ 5995</span>
+        </div>
+      </figure>
+      <figure class="trending-products-image">
+        <a href="">
+          <img id="trendingLastImg" src="https://staticimg.titan.co.in/Fastrack/Catalog/68012PP12_1.jpg?impolicy=pqmed&imwidth=320">
+        </a>
+        <figcaption>Reflex Hello Smart Watch with Silicone Blue Strap</figcaption>
+        <div class="prices">
+        <span class="new-price">₹ 855</span>
+        <span class="old-price">₹ 950</span>
+        </div>
+      </figure>
+      </div>
+      <button class="trendingProductButton1"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="trendingProductButton2"><i class="fa-solid fa-chevron-right"></i></button>
+    </section>
+
+    <!----------------------------------- Top Sellers Ends Here ------------------------------>
+
+    <!-------------------------------- Featured Collection Starts Here ----------------------->
+
+    <section class="featured-collection">
+      <h1>FEATURED COLLECTIONS</h1>
+      <div class="featured-images">
+        <figure>
+          <a href=""><img class="featured-img1" src="https://www.fastrack.in/wps/wcm/connect/fastrack/fa6e6aba-8cf6-47b2-aa0c-744955a1ec87/AllNighters.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-fa6e6aba-8cf6-47b2-aa0c-744955a1ec87-nvA7hNV"></a>
+          <figcaption>ALL NIGHTERS</figcaption>
+          <p>Slay the night away and rage-in with the trendiest collection of the season for guys</p>
+        </figure>
+        <figure>
+          <a href=""><img src="https://www.fastrack.in/wps/wcm/connect/fastrack/87a1dfd7-d02c-4c30-a49c-e972ad195600/1000x1000.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-87a1dfd7-d02c-4c30-a49c-e972ad195600-n-MzHXh"></a>
+          <figcaption>COCA COLA EDITION</figcaption>
+          <p>Imtroducing exclusive range of watches in the COca-Cola Limited Edition by Fastrack</p>
+        </figure>
+        <figure>
+          <a href=""><img class="featured-img3" src="https://www.fastrack.in/wps/wcm/connect/fastrack/cdf686d2-1a27-4fb0-a8fc-a39f8d4ff446/Tees+Arcade.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-cdf686d2-1a27-4fb0-a8fc-a39f8d4ff446-np3p1lm"></a>
+          <figcaption>TEES ARCADE</figcaption>
+          <p>Level up your game and throw it back to the days of 2D gaming with this sick collection.</p>
+        </figure>
+      </div>
+    </section>
+
+    <!--------------------------------- Featured Collection Ends Here ------------------------>
+
+    <!------------------------------------- Follow Us Starts Here ---------------------------->
+
+    <section class="follow-us">
+      <h1>FOLLOW US</h1>
+      <div class="follow-us-images">
+        <a href="">
+          <img class="item" src="https://cdn-yotpo-images-production.yotpo.com/instagram/77/17951294183089477/low_resolution.jpg">
+        </a>
+        <a href="">
+          <img class="item" src="https://cdn-yotpo-images-production.yotpo.com/instagram/89/17942934797247289/low_resolution.jpg">
+        </a>
+        <a href="">
+          <img class="item" src="https://cdn-yotpo-images-production.yotpo.com/instagram/63/18249406651128063/low_resolution.jpg">
+        </a>
+        <a href="">
+          <img class="item" src="https://cdn-yotpo-images-production.yotpo.com/instagram/16/17935932254349816/low_resolution.jpg">
+        </a>
+        <a href="">
+          <img class="item" src="https://cdn-yotpo-images-production.yotpo.com/instagram/59/18049110550352459/low_resolution.jpg">
+        </a>
+        <a href="">
+          <img class="item" src="https://cdn-yotpo-images-production.yotpo.com/instagram/88/17946240437294588/low_resolution.jpg">
+        </a>
+        <a href="">
+          <img class="item" src="https://cdn-yotpo-images-production.yotpo.com/instagram/32/17966964379765132/low_resolution.jpg">
+        </a>
+        <a href="">
+          <img class="item" src="https://cdn-yotpo-images-production.yotpo.com/instagram/82/18030322036362282/low_resolution.jpg">
+        </a>
+        <a href="">
+          <img class="item" src="https://cdn-yotpo-images-production.yotpo.com/instagram/76/17958887077798476/low_resolution.jpg">
+        </a>
+        <a href="">
+          <img class="item" src="https://cdn-yotpo-images-production.yotpo.com/instagram/88/17917194104470788/low_resolution.jpg">
+        </a>
+        <a href="">
+          <img class="item" src="https://cdn-yotpo-images-production.yotpo.com/instagram/49/17939087744252449/low_resolution.jpg">
+        </a>
+        <a href="">
+          <img class="item" src="https://cdn-yotpo-images-production.yotpo.com/instagram/19/17980022092548119/medium.jpg">
+        </a>
+      </div>
+      <button class="follow-us-btn">LOAD MORE</button>
+    </section>
+
+    <!-------------------------------------- Follow Us Ends Here ---------------------------->
+
+    <!-------------------------------------- Reviews Starts Here ---------------------------->
+
+    <!-- <section class="reviews">
+      <div class="reviews-head">
+        <div class="reviews-left">
+          <h1>Real Reviews From Real Customers</h1>
+        </div>
+        <div class="reviews-right">
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <p>8385 reviews</p>
+        <button class="reviews-left-btn"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="reviews-right-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section> -->
+
+    <!--------------------------------------- Reviews Ends Here ---------------------------->
+
+    <!----------------------------------- Find a Store Starts Here ------------------------->
+
+    <section class="store">
+      <div class="store-location">
+      <h1>FIND A STORE NEAR YOU</h1>
+      <div class="store-search">
+        <a><i class="fa-sharp fa-solid fa-location-dot"></i> Use my current location</a>
+        <input type="text" placeholder="Enter a pincode or city">
+        <button>Search</button>
+      </div>
+      </div>
+      <div class="store-about">
+        <div class="store-about-first">
+          <h2>100% ORIGINAL</h2>
+          <h3>All products are original and go through strict quality check.</h3>
+        </div>
+        <div class="store-about-second">
+          <h2>7 DAY RETURN</h2>
+          <h3>Use our hassle free method to return.</h3>
+        </div>
+        <div class="store-about-third">
+          <h2>SHIPPING</h2>
+          <h3>Shipping in India is free. Shipping charges applicable for International locations.</h3>
+        </div>
+      </div>
+      <div class="store-online">
+        <h1>FASTRACK - ONLINE FASHION STORE</h1>
+        <p>We at Fastrack understand the Importance of your Fashion needs and bring up accessories that would complement your attire in every way. Fastrack is a one-stop fashion destination for you that gives you options to choose from a wide range of collectibles that covers Watches, Smartwatch, Bags, Leather Wallets, Leather Belts and much more. Our online shopping store is user-friendly and lets you find your desired fashion accessory in few clicks. With every purchase, you get encircle points that gets credited to your encircle card. You can redeem these encircle points for hefty discounts to buy fashion accessories online. Experience a seamless payment and delivery process with us. We accept payments through Credit, Debit and Net Banking.</p>
+        <a href="">KNOW MORE</a>
+      </div>
+    </section>
+
+    <!----------------------------------- Find a Store Ends Here ------------------------->
+
+       <!------------------------------------ Footer Starts Here ---------------------------------->
+
+    <footer>
+      <section class="section4">
+        <div class="section4-upperDiv">
+          <div class="customer-service">
+            <h4 class="section4-heading">CUSTOMER SERVICE</h4>
+            <ul>
+              <li><a href="">Payment Options</a></li>
+              <li><a href="">Track Order</a></li>
+              <li><a href="">Find a Store</a></li>
+              <li><a href="">Encircle Program</a></li>
+            </ul>
+          </div>
+          <div class="contact-us">
+            <h4 class="section4-heading">CONTACT US</h4>
+            <h4 class="inner-deatil">1800-266-0123</h4>
+            <h4 class="inner-deatil">customercare@titan.co.in</h4>
+            <ul>
+              <li><a href="">Frequentley Asked Questions</a></li>
+            </ul>
+          </div>
+          <div class="policies">
+            <h4 class="section4-heading">POLICIES</h4>
+            <ul>
+              <li><a href="">Returns & Exchanges</a></li>
+              <li><a href="">Cancellation</a></li>
+              <li><a href="">Shipping</a></li>
+              <li><a href="">Warranty Policies</a></li>
+              <li><a href="">Delivery Information</a></li>
+            </ul>
+          </div>
+          <div class="about-fasttrack">
+            <h4 class="section4-heading">ABOUT FASTRACK</h4>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Careers</a></li>
+            </ul>
+          </div>
+          <div class="download-world-of-titan-app">
+            <h4 class="section4-heading">DOWNLOAD WORLD OF TITAN APP</h4>
+            <div class="image-container">
+              <img
+                src="https://www.fastrack.in/wps/wcm/connect/fastrack/061ef9c8-b270-4682-b17f-6a502cf02883/untitled+%282%29.svg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-061ef9c8-b270-4682-b17f-6a502cf02883-n8IsoXP"
+                alt=""
+                class="image"
+              />
+              <img
+                src="https://www.fastrack.in/wps/wcm/connect/fastrack/eadd303c-fd71-46e5-80b8-7992a55bcc20/google-play-badge.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-eadd303c-fd71-46e5-80b8-7992a55bcc20-mX6299t"
+                alt=""
+                class="image"
+              />
+            </div>
+            <div class="flex1">
+              <h4 class="inner-deatil flex1-heading">FOLLOW US ON</h4>
+              <ul class="flex1 icons">
+                <li>
+                  <a href="https://www.facebook.com"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.google.com"
+                    ><i class="fa-brands fa-google-plus"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com"
+                    ><i class="fa-brands fa-square-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.pinterest.com"
+                    ><i class="fa-brands fa-pinterest"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <h4 class="inner-deatil">NEED HELP ?</h4>
+            <ul>
+              <li>
+                <a href="" class="click-here">Click Here</a
+                ><span> to chat us with on </span
+                ><i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-section-lower">
+          <div class="pay-details"></div>
+        </div>
+      </section>
+    </footer>
+    </main>
+
+    <!---------------------------------- Footer Ends Here ------------------------------------>
+
+
+    <!-- Cart -->
+    <div class="delivery-main-container">
+        <div class="subcont1">
+            <h1 class="delHead">Delivery Address</h1>
+            <form action="">
+                <div class="usernames">
+                    <input type="text" name="" id="delivery-fname" placeholder="firstname">
+                    <input type="text" name="" id="delivery-lname" placeholder="lastname">
+                </div>
+                <div class="email">
+                    <input type="text" id="delivery-email" placeholder="email">
+                    <input type="text" id="delivery-address" placeholder="Address">
+                </div>
+            </form>
+            <button class="butn">submit</button>
+        </div>
+    </div>
+
+    <button id="billBtn" onclick="billPayment()" style="display: none;">Confirm Pay <span id="totalAmnt"></span></button>;
+
+    <script src="./script.js"></script>
+  </body>
+</html>
